@@ -1,5 +1,3 @@
-cd laravel-nuxt
-
 # Subir containers
 docker compose up -d
 
