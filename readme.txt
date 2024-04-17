@@ -45,20 +45,3 @@ cd laravel-nuxt
 
 # Subir containers e atualizar as imagens
 docker compose up -d --build
-
-
-
-
-
-Pede pra ela excluir tudo e realizar o processo novamente
-
-provavelmente a api não estava subindo pq a porta 9090 estava presa em algum container das outras vezes que deu erro
-
-Envia pra ela fala que ainda não consegue fazer mas que vai pesquisar para fazer essas melhorias
-
-Melhorias
-
-Criar tela de perfil onde o usuário pode atualizar informações do cadastros
-Criar rotina para recuperação de senha, (esqueci minha senha)
-
-Criar tela administrativa para adicionar, excluir, atualizar e  listar todos os usuários (permissão somente para usuario admin)
