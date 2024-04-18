@@ -1,6 +1,12 @@
 # Subir containers
 docker compose up -d
 
+# Verificar se todos os containers estão up
+docker ps -a
+
+# Verificar se as images subiram
+docker image -a
+
 # Cria arquivo .env
 docker compose exec laravel_api cp .env.example .env
 
