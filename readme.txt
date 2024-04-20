@@ -1,14 +1,13 @@
-- `Subir containers`
+# Subir containers
 
-```
 docker compose up -d 
-```
+
 
 # Verificar se todos os containers estão up
 docker ps -a
 
 # Verificar se as images subiram
-docker image -a
+docker images -a
 
 # Cria arquivo .env
 docker compose exec laravel_api cp .env.example .env
@@ -22,9 +21,15 @@ docker compose exec laravel_api /var/www/html/artisan migrate:fresh
 # Cria usuario padrão no banco de dados
 docker compose exec laravel_api /var/www/html/artisan db:seed
 
+# Atualizar
 
-# Parar serviços
 docker compose down
+
+git pull
+
+cd Projeto-Docker-
+
+docker compose up -d --build
 
 
 # Acessar api
@@ -33,7 +38,7 @@ http://localhost:9090
 # Acessar interface web
 http://localhost:5000
 
-# Referencias
+# Referencias Utilizadas
 
 ## Laravel Nuxt
 
@@ -46,11 +51,4 @@ https://www.youtube.com/watch?v=HLPoKz9j9KY&t=325s
 https://www.youtube.com/watch?v=ScmgXebitlQ&list=PLN_FLtIvNW0mo63rPdFBgL_UP5wF5eWLT
 
 
-# Atualizar 
 
-git pull
-
-cd laravel-nuxt
-
-# Subir containers e atualizar as imagens
-docker compose up -d --build
