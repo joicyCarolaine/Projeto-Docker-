@@ -1,4 +1,4 @@
--  `Subir containers`
+- `Subir containers`
 
 ```
 docker compose up -d 
