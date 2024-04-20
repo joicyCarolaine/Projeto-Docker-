@@ -1,6 +1,6 @@
 # Subir containers
 
-```ruby 
+```
 docker compose up -d 
 ```
 
