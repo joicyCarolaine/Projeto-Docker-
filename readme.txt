@@ -1,5 +1,5 @@
 # Subir containers
-docker compose up -d
+```docker compose up -d```
 
 # Verificar se todos os containers estão up
 docker ps -a
